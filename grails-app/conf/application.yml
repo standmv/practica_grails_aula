@@ -81,7 +81,11 @@ grails:
 endpoints:
     jmx:
         unique-names: true
-
+spring:
+    h2:
+        console:
+            path: /dbconsole
+            enabled: true
 ---
 hibernate:
     cache:
