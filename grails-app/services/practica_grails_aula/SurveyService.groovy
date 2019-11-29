@@ -9,7 +9,8 @@ class SurveyService {
 
     }
 
-    def save(Survey survey){
+    def save(Survey survey, User user){
+        survey.filledBy = user
         survey.save(flush: true, failOnError: true)
     }
 }

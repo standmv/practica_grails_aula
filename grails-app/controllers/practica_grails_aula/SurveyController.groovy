@@ -7,11 +7,14 @@ import grails.plugin.springsecurity.annotation.Secured
 class SurveyController {
 
     SurveyService surveyService
+    def springSecurityService
+
 
     def index() { }
 
     def saveSurvey(Survey survey){
-        surveyService.save(survey)
+        def currentUser = (User) springSecurityService.getCurrentUser()
+        surveyService.save(survey, currentUser)
         redirect(action: "surveyList")
     }
 
