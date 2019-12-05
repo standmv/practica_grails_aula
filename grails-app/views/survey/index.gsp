@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <!doctype html>
 <head>
-    <title>Survey</title>
+    <title>Encuesta Barcamp</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="/webjars/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
@@ -96,7 +96,7 @@
         </br>
         <div class="row">
             <div class="col-md-4">
-                <g:link action="surveyList" class="btn btn-warning">Resultados</g:link>
+                <g:link action="surveyResults" class="btn btn-warning">Resultados</g:link>
             </div>
             <div class="col-md-4">
             </div>
